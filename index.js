@@ -19,7 +19,7 @@ function btnDelayEvent() {
     button.disabled = true;
     setTimeout(function() {
         button.disabled = false;
-    }, 5);
+    }, 300);
 }
 
 function btnTextEvent() {
