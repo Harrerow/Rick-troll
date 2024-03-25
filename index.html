@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do not click the button</title>
+</head>
+<body>
+    <video src="" autoplay muted loop></video>
+    <button></button>
+    <p></p>
+    <h1>Do Not Push</h1>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        button{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            border: none;
+            border-radius: 199px;
+            box-shadow: 3px 3px 3px black;
+            transition-duration: 0.2s;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        button:active{
+            margin-left: 3px;
+            margin-top: 3px;
+            box-shadow: none;
+        }
+        button:disabled {
+            margin-top: 0px;
+            margin-left: 0px;
+            box-shadow: 3px 3px 3px black;
+        }
+        p{
+            font-size: 100px;
+            width: 100%;
+            text-align: center;
+        }
+        video{
+            height: 100vh;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        h1{
+            color: red;
+            height: 150px;
+            width: 300px;
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, -30%);
+            text-align: center;
+        }
+    </style>
+    <script src="index.js"></script>
+</body>
+</html>
